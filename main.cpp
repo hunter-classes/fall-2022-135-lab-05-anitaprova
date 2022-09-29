@@ -16,6 +16,14 @@ int main()
 	std::cout << nextPrime(17) << std::endl;
 
 	std::cout << countPrimes(5, 25) << std::endl;
+		
+	std::cout << isTwinPrime(15) << std::endl;
+	std::cout << isTwinPrime(5) << std::endl;
+
+	std::cout << nextTwinPrime(17) << std::endl;
+
+	std::cout << largestTwinPrime(5, 18) << std::endl;
+	std::cout << largestTwinPrime(14, 16) << std::endl;	
 
 	return 0;
 }
