@@ -50,7 +50,7 @@ int countPrimes(int a, int b){
 }
 
 bool isTwinPrime(int n){
-	if( isPrime(n) && (isPrime(n-2) == true || isPrime(n+2) == true)) {
+	if(isPrime(n) && (isPrime(n-2) == true || isPrime(n+2) == true)) {
 		return true;	
 	}
 	return false;
@@ -58,7 +58,7 @@ bool isTwinPrime(int n){
 
 int nextTwinPrime(int n){
 	int i = n + 1;
-	while(isTwinPrime(i)) {
+	while(!isTwinPrime(i)) {
 		i++;
 	}
 	return i;
