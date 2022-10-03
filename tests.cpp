@@ -6,6 +6,7 @@
 TEST_CASE("testing all functions"){ 
 	CHECK(isDivisibleBy(100,25));
 	CHECK(!isDivisibleBy(42,25)); //suppose to be false
+	CHECK(!isDivisibleBy(12,0));	
 
 	CHECK(!isPrime(1)); //suppose to be false
 	CHECK(isPrime(2));
